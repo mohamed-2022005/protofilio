@@ -128,6 +128,7 @@ section .container {
     }
 }
 
+
 .main-1 {
     background-color: #151515;
     color: white;
@@ -151,12 +152,6 @@ section .container {
 
 }
 
-@media screen and (max-width: 767px) {
-    .main-1 {
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 main {
     background-color: #151515;
@@ -227,6 +222,7 @@ footer form {
 
 footer form input {
     width: 400px;
+    max-width: 100%;
     background-color: #151515;
     font-size: 15px;
     outline: none;
@@ -296,4 +292,7 @@ footer form img {
         }
 
     }
-}
+}   
+body{
+    overflow-x: hidden;
+}  
