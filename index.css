@@ -3,7 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     /* overflow-x: hidden; */
 }
 
@@ -16,8 +17,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 39px 50px; 
-        flex-wrap: wrap; 
+        padding: 39px 50px;
+        flex-wrap: wrap;
         gap: 15px;
 
 
@@ -26,22 +27,24 @@ header {
             gap: 25px;
             cursor: pointer;
         }
-     
+
 
 
     }
 
 }
-@media screen and (max-width: 767px){
-   header .container{
-    display: flex;
-    justify-content: center;     
+
+@media screen and (max-width: 767px) {
+    header .container {
+        display: flex;
+        justify-content: center;
     }
 }
 
 
 .header-2 {
     color: white;
+
     .container {
         background-color: #151515;
         display: flex;
@@ -120,13 +123,13 @@ section .container {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     color: white;
-    
-    
+
+
     margin: auto;
     padding: 20px 0;
     flex-wrap: wrap;
-    
- .skill {
+
+    .skill {
         padding: 20px;
         text-align: center;
         border-radius: 8px;
@@ -137,56 +140,58 @@ section .container {
         }
     }
 }
+
 @media screen and (max-width: 767px) {
-    section .container{
+    section .container {
         grid-template-columns: 1fr;
     }
 }
 
 
-   .main-1 {
-      background-color: #151515;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 90px; 
+.main-1 {
+    background-color: #151515;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 250px;
+}
+
+.main-1 h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.main-1 a {
+    text-decoration: none;
+    border-bottom: 2px solid #4EE1A0;
+    padding-bottom: 8px;
+    margin-top: 40px;
+    color: white;
+}
+
+
+@media screen and (max-width: 767px) {
+    .main-1 {
+        justify-content: center;
+        gap: 50px;
+        padding: 20px;
     }
 
     .main-1 h2 {
-      font-size: 50px;
-      font-weight: bold;
+        font-size: 28px;
     }
 
     .main-1 a {
-      text-decoration: none;
-      border-bottom: 2px solid #4EE1A0;
-      padding-bottom: 8px;
-      margin-top: 40px;
-      color: white;
+        margin-top: 15px;
     }
-
-
-    @media screen and (max-width: 767px){
-      .main-1 {
-        justify-content: center; 
-        gap: 50px;            
-        padding: 20px;           
-      }
-
-      .main-1 h2 {
-        font-size: 28px; 
-      }
-
-      .main-1 a {
-        margin-top: 0;
-      }
-    }
+}
 
 
 main {
     background-color: #151515;
     padding: 20px 0;
+
     .icons {
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -209,123 +214,127 @@ main {
         grid-template-columns: repeat(1, auto);
 
     }
-    .main-1 a{
+
+    .main-1 a {
         border: none;
     }
 }
+
 footer {
-  background-color: #151515;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 30px 20px;
-  flex-wrap: wrap;
-  gap: 40px;
+    background-color: #151515;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 footer h2 {
-  font-size: 70px;
-  margin-bottom: 36px;
+    font-size: 70px;
+    margin-bottom: 36px;
 }
 
 footer p {
-  font-size: 18px;
-  opacity: 70%;
-  max-width: 400px;
-  text-align: justify;
+    font-size: 18px;
+    opacity: 70%;
+    max-width: 400px;
+    text-align: justify;
 }
 
 footer span {
-  color: #FF6F5B;
-  font-size: 14px;
-  text-align: right;
+    color: #FF6F5B;
+    font-size: 14px;
+    text-align: right;
 }
 
 footer form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  max-width: 400px; /* حل مشكلة العرض */
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    /* حل مشكلة العرض */
+    position: relative;
 }
 
 footer form input {
-  width: 100%;
-  background-color: #151515;
-  font-size: 15px;
-  outline: none;
-  padding: 10px 8px;
-  border: none;
-  border-bottom: 1px solid green;
-  color: white;
+    width: 100%;
+    background-color: #151515;
+    font-size: 15px;
+    outline: none;
+    padding: 10px 8px;
+    border: none;
+    border-bottom: 1px solid green;
+    color: white;
 }
 
 footer form input::placeholder {
-  color: white;
-  opacity: 70%;
+    color: white;
+    opacity: 70%;
 }
 
 footer form input:nth-child(1) {
-  border-bottom: 1px solid #4EE1A0;
-  padding-bottom: 20px;
+    border-bottom: 1px solid #4EE1A0;
+    padding-bottom: 20px;
 }
 
 footer form input:nth-child(2) {
-  border-bottom: 1px solid #FF6F5B;
-  padding-bottom: 20px;
+    border-bottom: 1px solid #FF6F5B;
+    padding-bottom: 20px;
 }
 
 footer form input:nth-child(5) {
-  border-bottom: 1px solid #FFFFFF;
-  padding-bottom: 50px;
-  opacity: 70%;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 50px;
+    opacity: 70%;
 }
 
 footer form input:last-child {
-  border: none;
-  border-bottom: 1px solid #4EE1A0;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-  width: fit-content;
-  padding: 8px 16px;
-  align-self: flex-end; /* يخلي الزرار يروح يمين من غير margin-left */
+    border: none;
+    border-bottom: 1px solid #4EE1A0;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+    padding: 8px 16px;
+    align-self: flex-end;
+    /* يخلي الزرار يروح يمين من غير margin-left */
 }
 
 footer form img {
-  width: 20px;
-  position: absolute;
-  top: 85px;
-  right: 10px;
+    width: 20px;
+    position: absolute;
+    top: 85px;
+    right: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    width: 500px;
-    max-width: 100%;
-  }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        width: 500px;
+        max-width: 100%;
+    }
 
-  footer p {
-    margin: auto;
-  }
+    footer p {
+        margin: auto;
+    }
 
-  footer form input:last-child {
-    align-self: end;
-  }
+    footer form input:last-child {
+        align-self: end;
+    }
 
 
-  footer form img,
-  footer span {
-    display: none;
-  }
+    footer form img,
+    footer span {
+        display: none;
+    }
 }
 
-  
-body{
+
+body {
     overflow-x: hidden;
-}  
+}
